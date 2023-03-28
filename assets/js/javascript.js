@@ -1,13 +1,9 @@
 
-// allQuestions.question
-// allQuestions[0].answers[
-// forloop(questions - answers)
+// Click start button to begin quiz
 
+// set time once start button is clicked to 1 minute
 
-// Click start button and timer starts as a question is presented
-
-
-// set questions
+// set questions & answers
 var allQuestions = [
 
     {  // Question 1 -- index=0
@@ -38,11 +34,21 @@ var allQuestions = [
 
 ];
 
-// Once a question is answered, show if its correct or wrong then automatically move to the next question.
+// correct/wrong notification and highlight
 
-// If a question is answered incorrectly, time is subtracted from the clock.
+// automatically move to the next question
 
-// When all the questions are answered or the time reaches 0, the game is over.
+// incorrect answer = time -5 seconds (subtracted from the clock)
 
-// Calculate correct/total for score
+// all questions answered || (or) the time reaches 0=  game over.
+
+// Calculate 'correct answers/total questions' for score 
+
+// enter initials for leader board
+
+// organize leaderboard array by highest score & update initials -- if initials already exist, replace with new score
+
+// set try again button with quiz function
+
+
  
