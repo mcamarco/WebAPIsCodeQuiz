@@ -1,33 +1,51 @@
-// User Story
 
-// AS A coding boot camp student
-// I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-// SO THAT I can gauge my progress compared to my peers
+// allQuestions.question
+// allQuestions[0].answers[
+// forloop(questions - answers)
 
-// Acceptance Criteria
 
 // Click start button and timer starts as a question is presented
+
+
+
+
+
+// set questions
+var allQuestions = [
+
+    {  // Question 1
+        question: ["Commonly used data types DO NOT include:"],
+        answers: ['strings', 'booleans', 'alerts', 'numbers'],
+        correctAnswer: 'alerts - correctAnswer1'
+    },
+
+    {  // Question 2
+        question: "The condition in an if / else statement is enclosed within _______.",
+        answers: ['quotes', 'curly brackets', 'parenthesis', 'square brackets'],
+        correctAnswer: 'correctAnswer2'
+    },
+
+
+    {  // Question 3
+        question: "String values must be enclosed within ______ when being assigned to variables",
+        answers: ['commas', 'curly brackets', 'quotes', 'parentheses'],
+        correctAnswer: 'correctAnswer3'
+    },
+
+
+
+    { // Question 4
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        answers: ['JavaScript', 'terminal/bash', 'for loops', 'console.log'],
+        correctAnswer: 'correctAnswer4'
+    },
+
+];
+
 // Once a question is answered, show if its correct or wrong then automatically move to the next question.
+
 // If a question is answered incorrectly, time is subtracted from the clock.
-// When all the questsion are answered or the time reaches 0, the game is over.
-// biggest mistake people make, is how you set up your 
 
-// example:
+// When all the questions are answered or the time reaches 0, the game is over.
 
-// varshowBizPizza = []
-// var pizza = {
-//     toppings: [],
-//     size: "big"
-// }
-
-
-// TODO: Set Variable for question # and set variables for questions and arrays as the answers?
-var submittedanswer = []
-var questions = {
-    q1 = ["answer1",", answer 2",", answer 3",", answer 4"],
-    q2 = ["answer1",", answer 2",", answer 3",", answer 4"],
-    q3 = ["answer1",", answer 2",", answer 3",", answer 4"],
-    q4 = ["answer1",", answer 2",", answer 3",", answer 4"],
-    q5 = ["answer1",", answer 2",", answer 3",", answer 4"],
-    q6 = ["answer1",", answer 2",", answer 3",", answer 4"]
-}
+//  biggest mistake people make, is how you set up your 
