@@ -44,4 +44,5 @@ var allQuestions = [
 
 // When all the questions are answered or the time reaches 0, the game is over.
 
-//  biggest mistake people make, is how you set up your 
+// Calculate correct/total for score
+ 
