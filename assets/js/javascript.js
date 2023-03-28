@@ -1,7 +1,7 @@
 
 // Click start button to begin quiz
 
-// set time once start button is clicked to 1 minute
+    // set time once start button is clicked to 1 minute
 
 // set questions & answers
 var allQuestions = [
@@ -34,19 +34,22 @@ var allQuestions = [
 
 ];
 
-// correct/wrong notification and highlight
+// correct (highlight green), wrong (highlight red) and notification 
 
 // automatically move to the next question
 
 // incorrect answer = time -5 seconds (subtracted from the clock)
 
-// all questions answered || (or) the time reaches 0=  game over.
+// all questions answered OR time reaches 0 =  game over.
+        // if questions id = 3 
+        // OR if timer reaches 0 then
+        // then show submit button, hide next button  
 
 // Calculate 'correct answers/total questions' for score 
 
 // enter initials for leader board
 
-// organize leaderboard array by highest score & update initials -- if initials already exist, replace with new score
+// organize leader board array by highest score & update initials -- if initials already exist, replace with new score
 
 // set try again button with quiz function
 
