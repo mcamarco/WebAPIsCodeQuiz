@@ -1,6 +1,5 @@
 
 // Click start button to begin quiz
-
     // set time once start button is clicked to 1 minute
 
 // set questions & answers
@@ -36,11 +35,13 @@ var allQuestions = [
 
 // correct (highlight green), wrong (highlight red) and notification 
 
-// automatically move to the next question
+// automatically move to the next question || show the next button
 
-// incorrect answer = time -5 seconds (subtracted from the clock)
+// WRONG ANSWER
+    // incorrect answer = time -5 seconds (subtracted from the clock)
 
-// all questions answered OR time reaches 0 =  game over.
+// GAME OVER
+    // all questions answered OR time reaches 0 =  game over.
         // if questions id = 3 
         // OR if timer reaches 0 then
         // then show submit button, hide next button  

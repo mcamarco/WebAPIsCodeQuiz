@@ -1,28 +1,27 @@
+
+/* entire page */
 body {
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* title text color */
-    color: black;
+    /* font-size: 20px; */
+    font-family: 'Lucida Sans Unicode';
+    background-color: lightgoldenrodyellow;
+      
+} 
+
+
+
+/* questions / answers section */
+
+.questions {
+    background-color:lavender;
 }
 
-.question {
-    font-weight: 600;
-    color: #297;
-}
 
-.answers {
-    margin-bottom: 20px;
-}
 
 /* BUTTONS */
 
 #button {
-    /* display: flex;
-    justify-content: space-evenly;
-    flex-direction: row-reverse; */
-    align-items: baseline;
     font-size: 20px;
-    background-color: orangered;
+    background-color: midnightblue;
     color: #fff;
     border-radius: 10px;
     padding: 10px;
@@ -30,26 +29,9 @@ body {
 }
 
 #button:hover {
-    background-color: black;
+    background-color: teal;
     opacity: 80%;
     cursor: grab;
 }
 
-
-/* .startbtn {  */
-    /* hide start btn */
- 
-    
-/* } */
-
-/* .completebtn { */
-    /* hide complete btn */
-
-/* } */
-
-/* .nextbtn { */
-    /* hide next btn */
-
-/* } 
- 
  
