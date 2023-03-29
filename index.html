@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/javascript.js"></script>
     <title>JavaScript Fundamentals Quiz</title>
 </head>
 
@@ -16,34 +15,35 @@
 
     <!-- quiz container for each question set using js variables -->
     <section class="quiz">
-
+        <!-- create timer -->
+        <p>Time: <span id="timer">00</span></p>
         <!-- enter questions and answers here -->
-        <div class="questions">
-            <p> Question: *ENTER QUESTION HERE*
-            <ul> *ANSWERS ARRAY*
-                <li><button>choice 1 </li></button>
-                <li><button>choice 2</li></button>
-                <li><button>choice 3</li></button>
-                <li><button> choice 4</li></button>
-                </p>
-                <p> *CORRECT OR WRONG NOTIFICATION*</p>
+        <div id="introduction">
+            <p>Quiz Assignment</p>
+
+            <!-- intro startbutton -->
+            <button id="start" class="startbtn">Start Quiz</button>
         </div>
-       
+        <div class="questions" id="questions">
+
+        </div>
+
     </section>
 
-    <!-- section for timer -->
+
 
 </body>
 
 
 <!-- set bottom of page to show Start, Next complete & Buttons -->
 <footer>
-    <div class="decisions">
-        <button id="button" class="startbtn">Start Quiz</button>
+    <!-- <div class="decisions">
+        
         <button id="button" class="nextbtn">Next</button>
         <button id="button" class="submitbtn">Submit</button>
         <button id="button" class="tryagainbtn">Try Again</button>
-
+    </div> -->
+    <script src="./assets/js/javascript.js"></script>
 </footer>
 
 </html>
