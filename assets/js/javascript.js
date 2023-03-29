@@ -66,6 +66,7 @@ function checkAnswer(){
     // CORRECT ANSWER
     if(userAns === allQuestions[counter].correctAnswer)
     {
+        // change from alert to highlighting correct answer and red if wrong
         alert('Correct');
         // add one to counter
         counter++;
@@ -114,7 +115,7 @@ function displayQuestion()
 
 document.getElementById('start').addEventListener('click', function(){
     document.getElementById("introduction").style.display = "none";
-    document.getElementById("questions").style.display = "block";
+    document.getElementById("questions");
     timer();
     displayQuestion();
 })
