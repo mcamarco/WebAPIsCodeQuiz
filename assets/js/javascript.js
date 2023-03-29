@@ -59,9 +59,10 @@ function finalscore() {
 
     //save initials into local storage
     var inputVal = document.getElementById("initials").value;
-    console.log(inputVal);
+    
     var submitbtn = document.getElementById("submit")
     submitbtn.addEventListener('click', () => {
+        console.log(inputVal);
         var leaderboardString = inputVal + ' - ' + scoretotal + '/4'
         console.log(leaderboardString)
     } 
