@@ -2,21 +2,24 @@
 body {
     /* font-size: 20px; */
     font-family: 'Lucida Sans Unicode';
-    background-color:white;
+    background-color:black;
    
 }
 
-
+h1 {
+    background-color: black;
+    color: white;
+}
 
 /* questions / answers section */
 .quiz {
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:black;
     width: 500px;
     padding: 25px;
-    border: 5px solid red;
+    border: 5px solid darkgoldenrod;
     border-radius: 20px;
-    align-items ;
+    /* align-items:baseline; */
     
 }
 
@@ -31,16 +34,17 @@ p #timer {
 
 button {
     font-size: 16px;
-    background-color: midnightblue;
+    background-color: black;
     color: #fff;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    
 }
 
 button:hover {
-    background-color:bisque;
+    background-color:darkblue;
     /* opacity: 80%; */
     cursor: grab;
-    color: black;
+    color: white;
 }
