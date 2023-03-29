@@ -57,16 +57,21 @@ function finalscore() {
     finalScoreEl.textContent = `Final Score: ${scoretotal}`
 
 
-    //save initials into local storage
-    var inputVal = document.getElementById("initials").value;
+    
+    var inputVal = document.getElementById("initials");
     
     var submitbtn = document.getElementById("submit")
     submitbtn.addEventListener('click', () => {
-        console.log(inputVal);
-        var leaderboardString = inputVal + ' - ' + scoretotal + '/4'
+        var leaderboardString = inputVal.value + ' - ' + scoretotal + '/4'
         console.log(leaderboardString)
+        // set local storage
+            localStorage.setItem(`${inputVal.value}-score`, JSON.stringify(leaderboardString));
     } 
     )
+
+
+   
+    
 
     // show results page including your score and request for initials, hide next show submit
 
