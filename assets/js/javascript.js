@@ -36,6 +36,7 @@ var allQuestions = [
 var counter = 0;
 var time = 90;
 var timerId;
+var scoretotal;
 
 function timer(){
     timerId = setInterval(function(){
@@ -46,31 +47,43 @@ function timer(){
         }
     }, 1000);
 }
+
 function finalscore(){
     clearInterval(timerId);
     //hide questions div
     document.getElementById("questions").style.display='none'
     //show final score div
+
     //save initials into local storage
     
     document.getElementById("finalpage").style.display='none'
 }
+
 function checkAnswer(){
     var userAns = this.getAttribute("data-text");
     console.log(userAns);
+    
+    // CORRECT ANSWER
     if(userAns === allQuestions[counter].correctAnswer)
     {
-        alert("Correct");
+        alert('Correct');
+        // add one to counter
         counter++;
+        
+        // if counter is greater than <4 then show the next question
         if(counter < 4){
         displayQuestion()
         }
+        // if counter is <4 then show final score and initials field
         else{
-            // function final score & initials
             finalscore();
+            console.log(finalscore)
         }
     }
+
+    // INCORRECT ANSWER
     else{
+        // change from alert to highlighting correct answer and red if wrong
         alert("Incorrect");
         time = time - 5;
         counter++;
@@ -99,33 +112,6 @@ function displayQuestion()
     }
 }
 
-// credit to doug in README :) 
-
-// question choices
-//const questionChoices = document.getElementById("question");
-//questionChoices.textContent = allQuestions[counter].question
-
-// answer choices
-// const answerChoices = document.getElementsByClassName("option");
-
-// for(let listItem = 0 ; listItem < answerChoices.length; listItem++) {
-//     // console.log(listItem)
-//     // console.log(answerChoices[listItem])
-
-//     // change text content - show each button through the loop
-//     answerChoices[listItem].textContent = allQuestions[0].answers[listItem];
-//     console.log(answerChoices[listItem].textContent = allQuestions[0].answers[listItem])
-//  }
-
-// create variables for each button
-// const button1 = document.getElementById("choice1")
-// const button2 = document.getElementById("choice2")
-// const button3 = document.getElementById("choice3")
-// const button4 = document.getElementById("choice4")
-
-
-//  listen to click on answer
-
 document.getElementById('start').addEventListener('click', function(){
     document.getElementById("introduction").style.display = "none";
     document.getElementById("questions").style.display = "block";
@@ -133,8 +119,9 @@ document.getElementById('start').addEventListener('click', function(){
     displayQuestion();
 })
 
-// check if answer matches correctAnswer
 
+// credit to doug in README :) 
+// credit tutor in README :) 
 
 
 
