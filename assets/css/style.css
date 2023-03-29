@@ -39,7 +39,8 @@ button {
 }
 
 button:hover {
-    background-color: teal;
-    opacity: 80%;
+    background-color:bisque;
+    /* opacity: 80%; */
     cursor: grab;
+    color: black;
 }
