@@ -34,6 +34,13 @@ var time = 90;
 var timerId;
 var scoretotal = 0;
 
+// hide results
+var results = document.getElementById("results");
+console.log(results);
+results.setAttribute("style", "display: none;");
+
+// hide leaderboard
+document.getElementById("leaderboard").style.display = 'none';
 
 // set timer once start button is clicked to 1 minute
 function timer() {
@@ -49,29 +56,33 @@ function timer() {
 // hide questions, show final score and initials field
 function finalscore() {
     clearInterval(timerId);
-    //hide questions div
+    //hide questions div & show results
     document.getElementById("questions").style.display = 'none';
+    document.getElementById("results").style.display = 'block';
 
     //show final score div
     var finalScoreEl = document.getElementById("score")
     finalScoreEl.textContent = `Final Score: ${scoretotal}`
 
 
-    
+
     var inputVal = document.getElementById("initials");
-    
+
     var submitbtn = document.getElementById("submit")
     submitbtn.addEventListener('click', () => {
+        // hide results - show leaderboard
+        document.getElementById("results").style.display = 'none';
+        document.getElementById("leaderboard").style.display = 'block';
         var leaderboardString = inputVal.value + ' - ' + scoretotal + '/4'
         console.log(leaderboardString)
+
         // set local storage
-            localStorage.setItem(`${inputVal.value}-score`, JSON.stringify(leaderboardString));
-    } 
+        localStorage.setItem(`${inputVal.value}-score`, JSON.stringify(leaderboardString));
+    }
     )
 
+    // window.localStorage.getItem(leaderboardString);
 
-   
-    
 
     // show results page including your score and request for initials, hide next show submit
 
@@ -139,6 +150,7 @@ document.getElementById('start').addEventListener('click', function () {
     timer();
     displayQuestion();
 })
+
 
 
 // credit to doug in README :)
