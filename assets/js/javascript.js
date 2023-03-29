@@ -51,6 +51,7 @@ function finalscore(){
     clearInterval(timerId);
     //hide questions div
     document.getElementById("questions").style.display='none';
+    
     //show final score div
 
     //save initials into local storage
