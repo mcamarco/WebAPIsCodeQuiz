@@ -1,7 +1,3 @@
-
-// Click start button to begin quiz
-    // set time once start button is clicked to 1 minute
-
 // set questions & answers
 var allQuestions = [
 
@@ -32,12 +28,14 @@ var allQuestions = [
     },
 ];
 
-//counter variable to keep track of question index
+//variables
 var counter = 0;
 var time = 90;
 var timerId;
 var scoretotal;
 
+
+// set timer once start button is clicked to 1 minute
 function timer(){
     timerId = setInterval(function(){
         document.getElementById("timer").textContent = time;
@@ -48,15 +46,18 @@ function timer(){
     }, 1000);
 }
 
+// hide questions, show final score and initials field
 function finalscore(){
     clearInterval(timerId);
     //hide questions div
-    document.getElementById("questions").style.display='none'
+    document.getElementById("questions").style.display='none';
     //show final score div
 
     //save initials into local storage
     
-    document.getElementById("finalpage").style.display='none'
+    // show results page including your score and request for initials, hide next show submit
+
+    // show leaderboard with prior 3 submissions, hide submit show try again button
 }
 
 function checkAnswer(){
@@ -104,6 +105,7 @@ function displayQuestion()
     var h4 = document.createElement("h4");
     h4.textContent = allQuestions[counter].question;
     document.getElementById("questions").append(h4);
+
     for(var i=0; i<allQuestions[counter].answers.length;i++){
         var btn = document.createElement("button");
         btn.textContent = allQuestions[counter].answers[i];
@@ -125,46 +127,3 @@ document.getElementById('start').addEventListener('click', function(){
 // credit tutor in README :) 
 
 
-
-
-
-
-
-
-
-
-
-// const answers = document.getElementById("answers");
-// answers.innerText = allQuestions[0].answers;
-
-
-// var questionSpan = document.getElementById(question);
-// console.log(questionSpan)
-
-// questionSpan.innerText = allQuestions[0].question;
-
-
-
-// correct (highlight green), wrong (highlight red) and notification 
-
-// automatically move to the next question || show the next button
-
-// WRONG ANSWER
-    // incorrect answer = time -5 seconds (subtracted from the clock)
-
-// GAME OVER
-    // all questions answered OR time reaches 0 =  game over.
-        // if questions id = 3 
-        // OR if timer reaches 0 then
-        // then show submit button, hide next button  
-
-// Calculate 'correct answers/total questions' for score 
-
-// enter initials for leader board
-
-// organize leader board array by highest score & update initials -- if initials already exist, replace with new score
-
-// set try again button with quiz function
-
-
- 
